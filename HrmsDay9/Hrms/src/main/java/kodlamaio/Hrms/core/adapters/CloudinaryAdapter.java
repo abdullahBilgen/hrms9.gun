@@ -16,9 +16,9 @@ import kodlamaio.Hrms.core.utilities.results.SuccessResult;
 public class CloudinaryAdapter {
 
 	static Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
-			"cloud_name", "dg6wsaypq", 
-			"api_key","436554978638323", 
-			"api_secret", "po75ikA6LIqs7AD4XkRShi1dm0U"));
+			"cloud_name", "bilgen",
+			  "api_key", "932667627396125",
+			  "api_secret", "smYIm29iAtuO2LG2vYkZ2Z2Zyi0"));
 
 	public static SuccessDataResult<Map> upload(MultipartFile file) throws IOException {
 		Map uploadResult = cloudinary.uploader().upload(file.getBytes(), ObjectUtils.emptyMap());
